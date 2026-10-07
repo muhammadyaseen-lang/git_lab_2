@@ -5,5 +5,5 @@ result1 = num1 + num2
 
 
 print("The addition is:", result1)
-print("The addition is:", result1)
+
 
