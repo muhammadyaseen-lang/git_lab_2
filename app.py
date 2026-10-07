@@ -4,6 +4,6 @@ num2 = int(input("Enter second number: "))
 result1 = num1 + num2
 
 
-print("BRANCH result is:", result1)
+print("ufff result is:", result1)
 
 
