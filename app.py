@@ -4,6 +4,6 @@ num2 = int(input("Enter second number: "))
 result1 = num1 + num2
 
 
-print("gggggg result is:", result1)
+print("aaa result is:", result1)
 
 
