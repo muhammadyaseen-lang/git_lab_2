@@ -6,6 +6,6 @@ result1 = num1 + num2
 
 print("aaa6 result is:", result1)
 print("aaa6 result is:", result1)
-print("aaa6 result is:", result1)
+print("aaa8 result is:", result1)
 
 
