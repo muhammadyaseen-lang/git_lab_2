@@ -1,0 +1,31 @@
+
+name: Manual Deployment Simulation
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: Select deployment environment
+        required: true
+        type: choice
+        options:
+          - staging
+          - production
+
+permissions:
+  contents: read
+
+jobs:
+  staging:
+    if: inputs.environment == 'staging'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Staging simulation
+        run: echo "Deploying to staging"
+
+  production:
+    if: inputs.environment == 'production' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Production simulation
+        run: echo "Deploying to production"
